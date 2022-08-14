@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		wyattwilsonportfolio.com
+		</title>
+		<link rel="icon" type="image/x-icon" href="flavicon.ico">
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+			}
+			a {
+  				text-decoration: none;
+			}
+
+			
+
+			ul {
+ 			 	background: rgb(220,220,220);
+  				list-style: none;
+  				margin: 0;
+  				padding-left: 0;
+			}
+
+			li {
+  				color: #fff;
+  				background: rgb(220,220,220);
+  				display: block;
+  				float: left;
+  				padding: 1rem;
+  				position: relative;
+  				text-decoration: none;
+				font-family: "DejaVu Sans Mono", monospace;
+  				transition-duration: 0.5s;
+			}
+  
+			li a {
+  				color: black;
+			}
+
+			li:hover a:hover {
+				color: white;
+			}
+
+			li:hover {
+  				background: rgb(32,178,170);
+				color: white;
+  				cursor: pointer;
+			}
+
+			ul li ul {
+  				background: rgb(220,220,220);
+  				visibility: hidden;
+  				opacity: 0;
+  				min-width: 5rem;
+  				position: absolute;
+  				transition: all 0.5s ease;
+  				margin-top: 1rem;
+  				left: 0;
+  				display: none;
+			}
+
+			ul li:hover > ul,
+			ul li ul:hover {
+  				visibility: visible;
+  				opacity: 1;
+  				display: block;
+			}
+
+			ul li ul li {
+  				clear: both;
+  				width: 100%;
+			}
+
+
+			#header {
+				background-color: rgb(112,128,144);
+				margin: 0;
+				padding: 15px;
+				position: sticky;
+				top: 0;
+				border-bottom-left-radius: 90px 30px;
+				border-bottom-right-radius: 90px 30px;
+			}
+			#name {
+				color: white;
+				text-align: center;
+				text-decoration: underline;
+				font-family: "DejaVu Sans Mono", monospace;
+			}
+			#bio1::first-letter {
+				font-size: 2em;
+				float: left;
+				padding: 0px 3px;
+				margin-right: 6px;
+				border-radius: 2px;
+				background-color: rgb(112,128,144);
+				color: white;
+				box-shadow: 3px 3px 0 rgb(47,79,79);
+			}
+			.bio {
+				width: 500px;
+				line-height: 1.5;
+				margin: auto;
+				font-family: "DejaVu Sans Mono", monospace;
+			}
+			#pdfipsum {
+				margin: auto;
+				width: 800px;
+				height: 800px;
+				display: block;
+				border: 2px rgb(112,128,144) solid;
+			}
+			#idphoto {
+				margin: auto;
+				display: block;
+				border-left: 10px rgb(112,128,144) inset;
+				border-right: 10px rgb(112,128,144) inset;
+				padding: 40px;
+			}
+			#foot {
+				background-color: rgb(112,128,144);
+				margin: 0;
+				padding: 1px;
+				border-top-left-radius: 90px 30px;
+				border-top-right-radius: 90px 30px;
+				width: 100%;
+				color: white;
+				text-align: center;
+				font-family: "DejaVu Sans Mono", monospace;
+				height: 60px;
+				position: sticky;
+				top: 93.5%;
+			}
+
+			#dirul {
+				display: table;
+				margin: 0 auto;
+				text-align: left;
+			}
+			p, h3, h4 {
+				width: 500px;
+				line-height: 1.5;
+				margin: auto;
+				font-family: "DejaVu Sans Mono", monospace;
+			}
+
+			code {
+				background-color:rgb(220,220,220);
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+			
+			#mySVG {
+				margin: -320px auto;
+  				position: sticky;
+  				top: 79%;
+				left:85%;
+  				width: 280px;
+  				height: 280px;
+				overflow:visible;
+			}
+			#changelong {
+				/* placehold */	
+			}
+			#bio1, #bio2 {
+				padding: 15px;
+
+			}
+			/* hides a working scrollbar (allegedly iffy in firefox or explorer */
+			body::-webkit-scrollbar {
+  				display: none;
+			}
+			body {
+			overflow-x: hidden;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+		<h1 id="name">Wyatt Wilson Portfolio</h1>
+
+		<div id="directorydiv">
+		<ul id="dirul">
+		<li><a id="here" class="directory" href="#">Home</a>
+			<ul class="dropdown">
+				<li><a href="#biodrop">Biography</a></li>
+				<li><a href="#pdfdrop">Resume</a></li>
+				<li><a href="#changedrop">Change Log</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="webdesign.html">Web Design</a></li>
+		<li><a class="directory"  href="hardware.html">Hardware</a>
+			<ul class="dropdown">
+				<li><a href="hardware.html#title">Hardware Project</a></li>
+				<li><a href="hardware.html#assembly">Assembly Project</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="networking.html">Networking</a>
+			<ul class="dropdown">
+				<li><a href="networking.html#lan">LAN</a></li>
+				<li><a href="networking.html#wan">WAN</a></li>
+				<li><a href="networking.html#coax">Coaxial Cable</a></li>
+				<li><a href="networking.html#twip">Twisted Pair</a></li>
+				<li><a href="networking.html#fib">Fiber Optic</a></li>
+				<li><a href="networking.html#hist">History of the Internet</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="javascript.html">JavaScript</a>
+			<ul class="dropdown">
+				<li><a href="javascript.html#un">Balloon</a></li>
+				<li><a href="javascript.html#du">Mover</a></li>
+				<li><a href="javascript.html#tre">Difficulty</a></li>
+			</ul>	
+		</li>
+		</ul>
+		
+		</div>
+		</div>
+
+		<br>
+
+		<hr style="width:30%" id="biodrop">
+		<p class="bio">Project Site for Wyatt Wilson, in Mrs. L. Mangieri's 1<sup>st</sup> Block Intro to Digital Technology (IDT) course, Fall Semester, 2021.
+		</p>
+		<hr style="width:30%">
+		
+		<footer id="foot">
+		<br>
+		<address>Created by <a href="mailto:wyatt.d.wilson@gmail.com" class="directory">Wyatt Wilson</a></address>
+		</footer>
+		
+		
+		<! -- initial display -->
+		<svg id="mySVG">
+  			<path fill="none" stroke="rgb(32,178,170)" stroke-width="9" id="ini" d="M25 10 L50 100 L75 40 L100 100 L125 10" />
+  			<path fill="none" stroke="rgb(32,178,170)" stroke-width="9" id="ini2" d="M150 10 L175 100 L200 40 L 225 100 L 250 10" />
+			<rect x="0" y="0" width="280" height="120"
+			style="fill:rgb(30,30,30);fill-opacity:0.1;stroke:rgb(47,79,79);stroke-width:4">
+		</svg>
+
+		<script>
+			// svg paths
+			var ini = document.getElementById("ini");
+			var length = ini.getTotalLength();
+			var ini2 = document.getElementById("ini2");
+			var length = ini2.getTotalLength();
+
+			// start
+			ini.style.strokeDasharray = length;
+			ini2.style.strokeDasharray = length;
+
+			// hide on load
+			ini.style.strokeDashoffset = length;
+			ini2.style.strokeDashoffset = length;
+
+			// detect mouse scroll
+			window.addEventListener("scroll", myFunction);
+
+			function myFunction() {
+				var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  				var draw = length * scrollpercent;
+  
+  				// Reverse the drawing (when scrolling upwards)
+  				ini.style.strokeDashoffset = length - draw;
+  				ini2.style.strokeDashoffset = length - draw;
+			}
+		</script>
+
+		<!-- Initial Over -->
+
+
+		<hr style="width:30%">
+		<p class="bio" id="bio1"> My name is Wyatt Wilson, and I am an 11th grade student at Glynn Academy, a high school in Georiga.
+		My schedule is inane, for during the school week I sleep very little, but on weekends I enter a hibernatory
+		state from which I am not easily roused. <br>
+		For the most part, I enjoy my classes, though I do not always achieve the best in certain regions of academic study-
+		read "math"- but I have come to enjoy the inane goings-on to which I am regular part. I have found friends among my classmates
+		and when the situation demands we organize into groups for projects, I have become more capable than I in past years have been.<br>
+		I am excited to see where this year will go, and I, the "Umbrella Kid" as coined by upperclassmen my freshman year, will
+		endeavor to weather the madness inherent to academia.</p>
+		</p>
+
+		<hr style="width:15%">
+		<img src="idphoto.jpg" alt="ID Photo" id="idphoto">
+		</img>
+		<hr style="width:15%">
+
+		<p class="bio" id="bio2">
+		Per the completion of a personality test collated from several methods conventionally used to assess IQ, as hosted by the YouScience
+		company. Its findings suggested I was proficient in visualizing ideas or processes in three dimensions, with which I agree as I feel
+		physically completing a project is immensely satisfying. Building upon this, their analysis proposed I was readily able to think in
+		an organized manner and to easily develop plans, though I often fall into procrastination. I was found to be capable at both scanning
+		documents for content and accuracy, and defining patterns present within number systems. It brought up that I was capable of rapidly
+		coming up with ideas and solutions.
+		</p>
+
+		<hr style="width:30%" id="pdfdrop">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:43%">
+		<iframe src="resumefull.pdf#toolbar=0" title="Resume Ipsum" id="pdfipsum">
+		</iframe>
+		<hr style="width:43%" id="changedrop">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:30%">
+		<h3> Change Log</h3>
+		<p>Record beginning from 31<sup>st</sup> October, 2021, following in creation Home, JavaScript, and Networking panels, the reworking of the navbar
+		to accomodate dropdowns using code based on that of an article hosted by CSS-Tricks.com for that purpose.
+		</p><br>
+
+		<h4>31<sup>st</sup> October
+		</h4>
+		<p>Extrapolated dropdown into Home panel, improved break between top, label information and drop-tabs in relevent pages.
+		</p><br>
+		<p>Researched on StackOverflow, learned that <code>display:table</code> to tie navegation bar to a working <code>margin:auto</code>, thereby
+		maintaining spacing and centering thereof at multiple window sizes. Increased header padding to keep navbar inside with the impacted display.
+		</p><br>
+		<p>Identified and rectified a formatting issue in Home and Networking tabs resulting from expanding heading padding, as described in log item above,
+		ensuring that positional dropdowns direct themselves properly by adding additional <code>br</code> elements to account for additional space at the top
+	 	of the page.
+		</p><br>
+		<p>Reformatted JavaScript panel, oriented sub-canvas <code>hr</code> to situate below title, oriented title left and introduced a description along
+		the lines of Networking panel.
+		</p><br>
+
+		<h4>1<sup>st</sup> November
+		</h4>
+		<p>Researched on w3school, set <code>scroll-behavior: smooth</code> to augment the positional links for Home and Networking tabs, improving aesthetic
+		thereof.
+		</p><br>
+
+		<h4>2<sup>nd</sup> November
+		</h4>
+		<p>Embedded project video into Networking panel, History section. Some confusion with iframe height, but all operational, if not outright rectified.
+		</p><br>
+
+		<h4>3<sup>rd</sup> November
+		</h4>
+		<p>Appended <code>allow="fullscreen"</code> into video iframe under Networking panel, per research on StackOverflow.
+		</p><br>
+		
+		<h4>20<sup>th</sup> November
+		</h4>
+		<p>Studied on w3school and experimented with SVG to make a sketch animate to scroll progrss on the screen. Positioning gets iffy if scaling window too small,
+		otherwise works well and behaves as expected. Set <code>margin: -300</code> to eliminate whitespace around where the actual SVG element is, as the 
+		<code>position:sticky</code> used to set it in the lower corner left that area empty.
+		<p><br>
+
+		<h4>22<sup>nd</sup> November
+		</h4>
+		<p>Put side borders onto main bio section to improve consistency with ID photo in the center thereof. <code>div</code> borders prevent carryover thereof into
+		Change Log section.
+		<p><br>
+
+		<h4>24<sup>th</sup> November
+		</h4>
+		<p>Researched on w3schools, using a webkit- which I don't exactly understand what is- to hide the scrollbar <b>without</b> preventing scrolling.
+		</p><br>
+		<p>Stuck footer to the bottom of homepage to better bookend site information and because I felt it better supported the SVG scroll progression bar.
+		Added an additional <code>br</code> to accomodate sticky footer, and tied footer object directly under header to prevent it wandering off in use.
+		</p><br>
+		<p>Removed <code>br</code>s to ameliorate a dropdown link flub resulting from moving the footer around.
+		</p><br>
+		<p>Ported scroll removal and sticky footer into the networking page, wrote out an excerpt for easier porting into future pages upon their finalization- as
+		using a sticky footer in a page with less than full height worth of information gets exceptionally iffy.
+		</p><br>
+
+		<h4>25<sup>th</sup> November
+		</h4>
+		<p>Set general margin to 0 to eliminate the little white space bits bordering the page, and reducing the weirdness resulting from sticky elements where
+		unintentional margins are involved.
+		</p><br>
+		<p>Added a <code>#toolbar=0</code> to the resume iframe, removing all PDF property displays from it and bringing better focus onto the document itself- though
+		it is still a placeholder.
+		</p><br>
+		<p>Hidden horizontal overflow unilaterally to prevent unwanted scrolling.
+		</p><br>
+
+		<h4>9<sup>th</sup> December
+		</h4>
+		<p>Input personal resume into relevant iframe.
+		</p><br>
+
+		<h4>14<sup>th</sup> December
+		</h4>
+		<p>Input more games into JavaScript section, reformatted text in preexisting set to accomodate such. Reached length in JavaScript, input custom scroll SVG and hid
+		standard.
+		</p><br>
+		<p>Input screenshots of FBLA competition site into Web Design section, as github pages prevents using a <code>iframe</code> to embed one of its sites into other 
+		locations online.
+		</p><br>
+		<p>Due to course scheduling conflict, removed Software section from site directory as it will not be covered by courseload.
+		</p><br>
+
+		<h4>15<sup>th</sup> December
+		</h4>
+		<p>Formatted text opposite objects in Hardware section, vertically centered and sorted out a minor disagreement said centering had with my parallax header image.
+		</p><br>
+		<p>Removed previously added text borders on Home section, input YouScience information into previous placeholder paragraph.
+		</p><br>
+		<p>Input screen captures and labels for JavaScript section programs, defined HTML/CSS/JS.
+		</p><br>
+
+		<h4>25<sup>th</sup> March
+		</h4>
+		<p>Illustrated and imported flavicon .ico files to all directories of the website, enhancing display characteristics at large.
+		</p>
+		
+
+		</div>
+
+		<hr style="width:30%"><br>
+
+		<br>
+		<br>
+		<br>
+
+	</body>
+</html>

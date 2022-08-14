@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		wyattwilsonwebdesign.com
+		</title>
+		<link rel="icon" type="image/x-icon" href="flavicon.ico">
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+			}
+			a {
+  				text-decoration: none;
+			}
+
+			
+
+			ul {
+ 			 	background: rgb(220,220,220);
+  				list-style: none;
+  				margin: 0;
+  				padding-left: 0;
+			}
+
+			li {
+  				color: #fff;
+  				background: rgb(220,220,220);
+  				display: block;
+  				float: left;
+  				padding: 1rem;
+  				position: relative;
+  				text-decoration: none;
+				font-family: "DejaVu Sans Mono", monospace;
+  				transition-duration: 0.5s;
+			}
+  
+			li a {
+  				color: black;
+			}
+
+			li:hover a:hover {
+				color: white;
+			}
+
+			li:hover {
+  				background: rgb(32,178,170);
+				color: white;
+  				cursor: pointer;
+			}
+
+			ul li ul {
+  				background: rgb(220,220,220);
+  				visibility: hidden;
+  				opacity: 0;
+  				min-width: 5rem;
+  				position: absolute;
+  				transition: all 0.5s ease;
+  				margin-top: 1rem;
+  				left: 0;
+  				display: none;
+			}
+
+			ul li:hover > ul,
+			ul li ul:hover {
+  				visibility: visible;
+  				opacity: 1;
+  				display: block;
+			}
+
+			ul li ul li {
+  				clear: both;
+  				width: 100%;
+			}
+
+
+			#header {
+			background-color: rgb(112,128,144);
+			margin: 0;
+			padding: 15px;
+			position: sticky;
+			top: 0;
+			border-bottom-left-radius: 90px 30px;
+			border-bottom-right-radius: 90px 30px;
+			}
+			#name {
+			color: white;
+			text-align: center;
+			text-decoration: underline;
+			font-family: "DejaVu Sans Mono", monospace;
+			}
+			
+			
+			#dirul {
+			display: table;
+			margin: 0 auto;
+			text-align: left;
+			}
+
+			body {
+			overflow-x: hidden;
+			}
+
+			.exem {
+			width: 80%;
+			}
+			#exemdiv {
+			text-align: center;
+			}
+
+			#foot {
+				background-color: rgb(112,128,144);
+				margin: 0;
+				padding: 1px;
+				border-top-left-radius: 90px 30px;
+				border-top-right-radius: 90px 30px;
+				width: 100%;
+				color: white;
+				text-align: center;
+				font-family: "DejaVu Sans Mono", monospace;
+				height: 60px;
+				position: sticky;
+				top: 93.5%;
+			}
+			.bio {
+				width: 500px;
+				line-height: 1.5;
+				margin: auto;
+				font-family: "DejaVu Sans Mono", monospace;
+			}
+			#mySVG {
+				margin: -320px auto;
+  				position: sticky;
+  				top: 79%;
+				left:85%;
+  				width: 280px;
+  				height: 280px;
+				overflow:visible;
+			}
+			/* hides a working scrollbar (allegedly iffy in firefox or explorer */
+			body::-webkit-scrollbar {
+  				display: none;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+		<h1 id="name">Wyatt Wilson Web Design</h1>
+		<div id="directorydiv">
+		<ul id="dirul">
+		<li><a class="directory" href="portfolio.html">Home</a>
+			<ul class="dropdown">
+				<li><a href="portfolio.html#biodrop">Biography</a></li>
+				<li><a href="portfolio.html#pdfdrop">Resume</a></li>
+				<li><a href="portfolio.html#changedrop">Change Log</a></li>
+			</ul>
+		</li>
+		<li><a id="here" class="directory" href="#">Web Design</a></li>
+		<li><a class="directory"  href="hardware.html">Hardware</a>
+			<ul class="dropdown">
+				<li><a href="hardware.html#title">Hardware Project</a></li>
+				<li><a href="hardware.html#assembly">Assembly Project</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="networking.html">Networking</a>
+			<ul class="dropdown">
+				<li><a href="networking.html#lan">LAN</a></li>
+				<li><a href="networking.html#wan">WAN</a></li>
+				<li><a href="networking.html#coax">Coaxial Cable</a></li>
+				<li><a href="networking.html#twip">Twisted Pair</a></li>
+				<li><a href="networking.html#fib">Fiber Optic</a></li>
+				<li><a href="networking.html#hist">History of the Internet</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="javascript.html">JavaScript</a>
+			<ul class="dropdown">
+				<li><a href="javascript.html#un">Balloon</a></li>
+				<li><a href="javascript.html#du">Mover</a></li>
+				<li><a href="javascript.html#tre">Difficulty</a></li>
+			</ul>	
+		</li>
+		</ul>
+
+		</div>
+		</div>
+
+		<br>
+
+		<hr style="width:30%">
+		<p class="bio">HyperText Markup Language, or HTML, is a foundational coding language used on the internet. It is used to structure the documents displayed online.
+		</p><br>
+		<p class="bio">Cascading Style Sheets, or CSS, is a coding language used to define the aesthetic appearance of HTML sites. The first word in its name explains the
+		"inheritance" rule which defines which of any number of conflicting rules will apply to an element.
+		</p><br>
+		<p class="bio">Page compositions of a site turned in for the FBLA Web Design Competition, with the aim being to make a site representing a "business" in the
+		contestant's local region. Due to hosting service preventing iframe embeds, using screenshots to convey site content efficiently.
+		</p>
+		<hr style="width:30%">
+
+		<footer id="foot">
+		<br>
+		<address>Created by <a href="mailto:wyatt.d.wilson@gmail.com" class="directory">Wyatt Wilson</a></address>
+		</footer>
+
+		<! -- initial display -->
+		<svg id="mySVG">
+  			<path fill="none" stroke="rgb(32,178,170)" stroke-width="9" id="ini" d="M25 10 L50 100 L75 40 L100 100 L125 10" />
+  			<path fill="none" stroke="rgb(32,178,170)" stroke-width="9" id="ini2" d="M150 10 L175 100 L200 40 L 225 100 L 250 10" />
+			<rect x="0" y="0" width="280" height="120"
+			style="fill:rgb(30,30,30);fill-opacity:0.1;stroke:rgb(47,79,79);stroke-width:4">
+		</svg>
+
+		<script>
+			// svg paths
+			var ini = document.getElementById("ini");
+			var length = ini.getTotalLength();
+			var ini2 = document.getElementById("ini2");
+			var length = ini2.getTotalLength();
+
+			// start
+			ini.style.strokeDasharray = length;
+			ini2.style.strokeDasharray = length;
+
+			// hide on load
+			ini.style.strokeDashoffset = length;
+			ini2.style.strokeDashoffset = length;
+
+			// detect mouse scroll
+			window.addEventListener("scroll", myFunction);
+
+			function myFunction() {
+				var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  				var draw = length * scrollpercent;
+  
+  				// Reverse the drawing (when scrolling upwards)
+  				ini.style.strokeDashoffset = length - draw;
+  				ini2.style.strokeDashoffset = length - draw;
+			}
+		</script>
+
+		<!-- Initial Over -->
+
+		<div id="exemdiv">
+
+		<img src="webimg/home.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/programs.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/junior.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/youth.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/adult.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/senior.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/testimonials.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/rates.jpg" class="exem">
+		<br>
+		<br>
+
+		<img src="webimg/contact.jpg" class="exem">
+		<br>
+		<br>
+
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		wyattwilsonsoftware.com
+		</title>
+		<link rel="icon" type="image/x-icon" href="flavicon.ico">
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+			}
+			a {
+  				text-decoration: none;
+			}
+
+			
+
+			ul {
+ 			 	background: rgb(220,220,220);
+  				list-style: none;
+  				margin: 0;
+  				padding-left: 0;
+			}
+
+			li {
+  				color: #fff;
+  				background: rgb(220,220,220);
+  				display: block;
+  				float: left;
+  				padding: 1rem;
+  				position: relative;
+  				text-decoration: none;
+				font-family: "DejaVu Sans Mono", monospace;
+  				transition-duration: 0.5s;
+			}
+  
+			li a {
+  				color: black;
+			}
+
+			li:hover a:hover {
+				color: white;
+			}
+
+			li:hover {
+  				background: rgb(32,178,170);
+				color: white;
+  				cursor: pointer;
+			}
+
+			ul li ul {
+  				background: rgb(220,220,220);
+  				visibility: hidden;
+  				opacity: 0;
+  				min-width: 5rem;
+  				position: absolute;
+  				transition: all 0.5s ease;
+  				margin-top: 1rem;
+  				left: 0;
+  				display: none;
+			}
+
+			ul li:hover > ul,
+			ul li ul:hover {
+  				visibility: visible;
+  				opacity: 1;
+  				display: block;
+			}
+
+			ul li ul li {
+  				clear: both;
+  				width: 100%;
+			}
+
+
+			#header {
+			background-color: rgb(112,128,144);
+			margin: 0;
+			padding: 15px;
+			position: sticky;
+			top: 0;
+			border-bottom-left-radius: 90px 30px;
+			border-bottom-right-radius: 90px 30px;
+			}
+			#name {
+			color: white;
+			text-align: center;
+			text-decoration: underline;
+			font-family: "DejaVu Sans Mono", monospace;
+			}
+			
+			
+			#dirul {
+			display: table;
+			margin: 0 auto;
+			text-align: left;
+			}
+
+			body {
+			overflow-x: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+		<h1 id="name">Wyatt Wilson Software</h1>
+		<div id="directorydiv">
+		<ul id="dirul">
+		<li><a class="directory" href="portfolio.html">Home</a>
+			<ul class="dropdown">
+				<li><a href="portfolio.html#biodrop">Biography</a></li>
+				<li><a href="portfolio.html#pdfdrop">Resume</a></li>
+				<li><a href="portfolio.html#changedrop">Change Log</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="webdesign.html">Web Design</a></li>
+		<li><a id="here" class="directory" href="#">Software</a></li>
+		<li><a class="directory"  href="hardware.html">Hardware</a></li>
+		<li><a class="directory" href="networking.html">Networking</a>
+			<ul class="dropdown">
+				<li><a href="networking.html#lan">LAN</a></li>
+				<li><a href="networking.html#wan">WAN</a></li>
+				<li><a href="networking.html#coax">Coaxial Cable</a></li>
+				<li><a href="networking.html#twip">Twisted Pair</a></li>
+				<li><a href="networking.html#fib">Fiber Optic</a></li>
+				<li><a href="networking.html#hist">History of the Internet</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="javascript.html">JavaScript</a></li>
+		</ul>
+
+		</div>
+		</div>
+
+		<br>
+	</body>
+</html>

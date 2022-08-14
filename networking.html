@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		wyattwilsonnetworking.com
+		</title>
+		<link rel="icon" type="image/x-icon" href="flavicon.ico">
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+			}
+			a {
+  				text-decoration: none;
+			}
+
+			
+
+			ul {
+ 			 	background: rgb(220,220,220);
+  				list-style: none;
+  				margin: 0;
+  				padding-left: 0;
+			}
+
+			li {
+  				color: #fff;
+  				background: rgb(220,220,220);
+  				display: block;
+  				float: left;
+  				padding: 1rem;
+  				position: relative;
+  				text-decoration: none;
+				font-family: "DejaVu Sans Mono", monospace;
+  				transition-duration: 0.5s;
+			}
+  
+			li a {
+  				color: black;
+			}
+
+			li:hover a:hover {
+				color: white;
+			}
+
+			li:hover {
+  				background: rgb(32,178,170);
+				color: white;
+  				cursor: pointer;
+			}
+
+			ul li ul {
+  				background: rgb(220,220,220);
+  				visibility: hidden;
+  				opacity: 0;
+  				min-width: 5rem;
+  				position: absolute;
+  				transition: all 0.5s ease;
+  				margin-top: 1rem;
+  				left: 0;
+  				display: none;
+			}
+
+			ul li:hover > ul,
+			ul li ul:hover {
+  				visibility: visible;
+  				opacity: 1;
+  				display: block;
+			}
+
+			ul li ul li {
+  				clear: both;
+  				width: 100%;
+			}
+
+
+			#header {
+			background-color: rgb(112,128,144);
+			margin: 0;
+			padding: 15px;
+			position: sticky;
+			top: 0;
+			border-bottom-left-radius: 90px 30px;
+			border-bottom-right-radius: 90px 30px;
+			}
+			#name {
+			color: white;
+			text-align: center;
+			text-decoration: underline;
+			font-family: "DejaVu Sans Mono", monospace;
+			}
+			
+			p, h3 {
+			width: 500px;
+			line-height: 1.5;
+			margin: auto;
+			font-family: "DejaVu Sans Mono", monospace;
+			}
+			img {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			}
+			#dirul {
+			display: table;
+			margin: 0 auto;
+			text-align: left;
+			}
+
+			html {
+			scroll-behavior: smooth;
+			}
+			iframevid {
+			width: 30%;
+			display: block;
+			border: 2px rgb(112,128,144) solid;
+			}
+			#frameholder {
+			text-align: center;
+			}
+
+			#mySVG {
+				margin: -320px auto;
+  				position: sticky;
+  				top: 79%;
+				left:85%;
+  				width: 280px;
+  				height: 280px;
+				overflow:visible;
+			}
+
+			#foot {
+				background-color: rgb(112,128,144);
+				margin: 0;
+				padding: 1px;
+				border-top-left-radius: 90px 30px;
+				border-top-right-radius: 90px 30px;
+				width: 100%;
+				color: white;
+				text-align: center;
+				font-family: "DejaVu Sans Mono", monospace;
+				height: 60px;
+				position: sticky;
+				top: 93.5%;
+			}
+			body::-webkit-scrollbar {
+  				display: none;
+			}
+			body {
+			overflow-x: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+		<h1 id="name">Wyatt Wilson Networking</h1>
+		<div id="directorydiv">
+		<ul id="dirul">
+		<li><a class="directory" href="portfolio.html">Home</a>
+			<ul class="dropdown">
+				<li><a href="portfolio.html#biodrop">Biography</a></li>
+				<li><a href="portfolio.html#pdfdrop">Resume</a></li>
+				<li><a href="portfolio.html#changedrop">Change Log</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="webdesign.html">Web Design</a></li>
+		<li><a class="directory"  href="hardware.html">Hardware</a>
+			<ul class="dropdown">
+				<li><a href="hardware.html#title">Hardware Project</a></li>
+				<li><a href="hardware.html#assembly">Assembly Project</a></li>
+			</ul>
+		</li>
+		<li><a id="here" class="directory" href="#">Networking</a>
+			<ul class="dropdown">
+				<li><a href="#lan">LAN</a></li>
+				<li><a href="#wan">WAN</a></li>
+				<li><a href="#coax">Coaxial Cable</a></li>
+				<li><a href="#twip">Twisted Pair</a></li>
+				<li><a href="#fib">Fiber Optic</a></li>
+				<li><a href="#hist">History of the Internet</a></li>
+			</ul>
+		</li>
+		<li><a class="directory" href="javascript.html">JavaScript</a>
+			<ul class="dropdown">
+				<li><a href="javascript.html#un">Balloon</a></li>
+				<li><a href="javascript.html#du">Mover</a></li>
+				<li><a href="javascript.html#tre">Difficulty</a></li>
+			</ul>	
+		</li>
+		</ul>
+
+		</div>
+		</div>
+
+		<br>
+
+		<hr style="width:30%">
+		<p class="bio">Definitions for terminology associated with the Intro to Digital Technology networking unit.
+		</p>
+		<p class="bio" id="lan">Navegate via drop-down menu to positional links on this page or by navigating down to the heading which you seek.
+		</p>
+		<hr style="width:30%">
+
+		<footer id="foot">
+		<br>
+		<address>Created by <a href="mailto:wyatt.d.wilson@gmail.com" class="directory">Wyatt Wilson</a></address>
+		</footer>
+
+		<! -- initial display -->
+		<svg id="mySVG">
+  			<path fill="none" stroke="rgb(32,178,170)" stroke-width="9" id="ini" d="M25 10 L50 100 L75 40 L100 100 L125 10" />
+  			<path fill="none" stroke="rgb(32,178,170)" stroke-width="9" id="ini2" d="M150 10 L175 100 L200 40 L 225 100 L 250 10" />
+			<rect x="0" y="0" width="280" height="120"
+			style="fill:rgb(30,30,30);fill-opacity:0.1;stroke:rgb(47,79,79);stroke-width:4">
+		</svg>
+
+		<script>
+			// svg paths
+			var ini = document.getElementById("ini");
+			var length = ini.getTotalLength();
+			var ini2 = document.getElementById("ini2");
+			var length = ini2.getTotalLength();
+
+			// start
+			ini.style.strokeDasharray = length;
+			ini2.style.strokeDasharray = length;
+
+			// hide on load
+			ini.style.strokeDashoffset = length;
+			ini2.style.strokeDashoffset = length;
+
+			// detect mouse scroll
+			window.addEventListener("scroll", myFunction);
+
+			function myFunction() {
+				var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  				var draw = length * scrollpercent;
+  
+  				// Reverse the drawing (when scrolling upwards)
+  				ini.style.strokeDashoffset = length - draw;
+  				ini2.style.strokeDashoffset = length - draw;
+			}
+		</script>
+
+		<!-- Initial Over -->
+
+
+		<hr style="width:30%">
+		<h3>LAN</h2>
+		<img class="imgex" src="https://www.webopedia.com/wp-content/uploads/2020/10/lan-local-area-network_5f854df48a34a-2.jpeg" width="30%">
+		<p class="bio">A Local Area Network, or LAN, connects devices over a short range and within a single setting or environment. They are frequently used in
+			academic settings or workplaces to connect multiple users to single iterations of a peripheral device, whose cost prohibits a 1-to-1 rate alongside
+			computer desktops.
+		</p>
+		<hr style="width:30%" id="wan">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:30%">
+		<h3>WAN</h2>
+		<img class="imgex" src="https://cdn.shopify.com/s/files/1/0014/6404/1539/files/wan-example.png?v=1574348383" width="30%">
+		<p class="bio">A Wide Area Network, or WAN, connects multiple independant LANs to one another in order to promote communication between individuals and the
+			sharing of information between machines over distances that would be prohibitive were it a measure of real-world travel. A WAN can be used to extend
+			range over which an online business can conduct sales or to connect information repositories between regions. 
+		</p>
+		<p class="bio">One of the most common and widely-used WANs is the internet itself.
+		</p>
+		<hr style="width:30%" id="coax">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:30%">
+		<h3>Coaxial Cable</h2>
+		<img class="imgex" src="https://www.wireandcabletips.com/wp-content/uploads/2016/06/Coaxial-cable-large.jpg" width="30%">
+		<p class="bio">A coaxial cable, first patented in 1880 by one Oliver Heaviside, is constructed of a core wire, surrounded in turn by an insulator, a copper shield,
+			and an outer container of some insulating material. It conveys binary through on/off electrical signals with an immense frequency, though it suffers from weaknesses in outer 
+			insulation, as unrelated signals can leech into the line and impede the desired signal, and that signal may also have opportunity to leech out, weakening
+			the reciever's impression of it and hampering signals around the area it leeches out.
+		</p>
+		<hr style="width:30%" id="twip">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:30%">
+		<h3>Twisted Pairs</h2>
+		<img class="imgex" src="https://www.networkcablinglosangeles.com/wp-content/themes/networkcablinglosangeles/images/unshielded_cable.jpg" width="30%">
+		<p class="bio">A twisted pair cable is constructed of two interwoven lines which convey off/on binary impulses electrically. The interwoven design prevents
+			the leeching which occurs in coaxial designs by holding roughly equal currents, and their interwoven position places them equally close to the source of
+			unwanted signals, so that the difference between them can be interpreted as the desired signal by the reciever. If multiple twisted pairs are placed in
+			proximity to one another, most frequently in a common bundle, shared rates of twisting may prove detrimental to both impacted pairs, as the twist rate
+			is a large part of the process which protects them from unwanted signal incursion.
+		</p>
+		<hr style="width:30%" id="fib">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:30%">
+		<h3>Fiber Optic</h2>
+		<img class="imgex" src="https://www.cvalley.net/wp-content/uploads/2020/09/Fiber-Cable-Image-Square-300x200.jpg" width="30%">
+		<p class="bio">A fiber-optic or optical-fiber cable is constructed from one or many glass "optical fibers" which are used to convey binary through the
+			means of <i>light</i> surrounded by a casing. As it moves at literal light-speed, it is capable of incredible rates of communication. As light diffuses
+			as it moves, over time the light becomes fainter, reducing the ammount which reaches the reciever. This is compounded that the number of connections along 
+			the cable's route also reduce the signal by the time it reaches the reciever.
+		</p>
+		<hr style="width:30%" id="hist">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr style="width:30%">
+		<h3>History of the Internet</h2>
+		<img class="imgex" src="https://thereboot.com/wp-content/uploads/2020/11/Internet-History_Header-opt.jpg?w=750" width="30%">	
+		<p class="bio">In the 1960s, computers were massive and sluggish, and only the most specialized of situations could warrant their employment towards a project
+			or endeavor. They were completely isolated, and files they held could only be accessed directly from their real-world location. Some report fears of Mutually Assured
+			Destruction, which ran rampant during those middle years of the Cold  War, led governmental research bodies to build networks that would maintain the conveyance
+			of crucial information after the bombs fell-- If you hadn't noticed, this didn't happen.
+		</p><br>
+		<p class="bio">Others suggest that there was a much tamer demand to form early networks- That the few computers in existance at the time needed a better way to delineate tasks,
+			thereby levelling access by those researchers or other antique brainiacs who were obliged to use computers in that way (and whose research contributed to the way we use
+			computers in the modern day).
+		</p><br>
+		<p class="bio">All the same, this network existed, and despite its few connections, others took inspiration and built little networks of their own.  It was still a small,
+			isolated, and specialized affair, but now one needn't travel across the nation to look at a spreadsheet held on a certain computer. In 1983, Transfer Control Protocol / Internetwork
+			Protocol (TCP/IP) was established, allowing interaction between these networks. Such, the internet, though not quite as we now concieve it, came to be.
+		</p><br>
+		<p class="bio">Five years later, a British researcher at CERN named Tim Berners-Lee conceptuallized the World Wide Web, whcih allowed the access of documents through hypertext from any connection
+			point to the network. Built on this foundation, the next 30 years have heralded colossal innovations upon those humble beginnings. Blogs, recipe sharing sites, online business conduction and
+			communication, as well as inane facets of modernity like the social media platforms of today, and the world is more closely tied together than at any previous point in recorded history.
+		</p><br>
+		<div id="frameholder">
+		<iframe src="https://www.youtube.com/embed/21eFwbb48sE" title="embedvid" id="iframevid" allow="fullscreen">
+		</iframe>
+		<p class="bio"><i>2:57 to 3:27</i></p>
+		</div><br>
+		<p class="bio"><sup>https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml</sup></p>
+		<hr style="width:30%">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</body>
+</html>
